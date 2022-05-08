@@ -8,6 +8,6 @@ app.use(cors()) //será usado para integrar com o front-end
 app.use(express.json());
 app.use(routes)
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('HTTP server running on port 3333')
 })
